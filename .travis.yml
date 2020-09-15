@@ -1,4 +1,3 @@
-sudo: required
 services:
   - docker
 
@@ -6,4 +5,4 @@ before_install:
   - docker build -t bivi325/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run bivi325/docker-reactnpm run test -- --coverage
+  - docker run bivi325/docker-react npm run test -- --coverage
